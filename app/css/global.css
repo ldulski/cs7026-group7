@@ -1,0 +1,13 @@
+@import './variable.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-base-color);
+  color: var(--light-text-color);
+  font-family:var(--font-primary);
+}

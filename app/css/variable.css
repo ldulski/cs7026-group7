@@ -14,6 +14,9 @@
     --dark-accent:#fdfff5;
     --dark-audio-bar:#0E1D34;
 
+    /* Font */
+    --font-primary: "Epilogue", sans-serif;
+
     /* Font sizes */
     --ts-h1: 95px;
     --ts-h2: 72px;
