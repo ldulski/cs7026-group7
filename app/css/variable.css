@@ -1,0 +1,34 @@
+:root {
+    /* Colors */
+    --light-base-color: #fdfff5;/*BG*/
+    --light-text-color: #37465E;
+    --light-button-color: #37465E;
+    --light-button-hover: #e2fdff;
+    --light-accent-golden:#F2B769;
+    --light-audio-bar: #D3D3C7;
+
+    --dark-base-color: #37465E;/*BG*/
+    --dark-text-color: #F2B769;
+    --dark-button-color:#F2B769;
+    --dark-button-hovern:#942823;
+    --dark-accent:#fdfff5;
+    --dark-audio-bar:#0E1D34;
+
+    /* Font sizes */
+    --ts-h1: 95px;
+    --ts-h2: 72px;
+    --ts-h3: 54px;
+    --ts-h4: 40px;
+    --ts-h5: 30px;
+    --ts-h6: 23px;
+    --ts-body: 17px;
+    --ts-small: 13px;
+    --ts-button: 23px;
+    --ts-nav: 23px;
+    --ts-tag: 23px;
+    --ts-subheader: 23px;
+
+    /* Line heights */
+    --lh-heading: 120px;
+    --lh-body: 120px;
+}
