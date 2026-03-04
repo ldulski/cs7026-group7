@@ -2,42 +2,51 @@
     /* Colors */
     --light-base-color: #fdfff5;/*BG*/
     --light-text-color: #37465E;
-    --light-button-color: #37465E;
-    --light-button-hover: #e2fdff;
-    --light-accent-golden:#F2B769;
     --light-audio-bar: #D3D3C7;
 
     --dark-base-color: #37465E;/*BG*/
     --dark-text-color: #F2B769;
-    --dark-button-color:#F2B769;
-    --dark-button-hovern:#942823;
-    --dark-accent:#fdfff5;
     --dark-audio-bar:#0E1D34;
+
+    /* for highlight & btn variations */
+    --accent-cream: #fdfff5; 
+    --accent-navy: #37465E;
+    --accent-red: #942823;
+    --accent-gold: #F2B769;
 
     /* Font */
     --font-primary: "Epilogue", sans-serif;
 
     /* Font sizes */
-    --fs-h1: 95px;
-    --fs-h2: 72px;
-    --fs-h3: 54px;
-    --fs-h4: 40px;
-    --fs-h5: 30px;
-    --fs-h6: 23px;
-    --fs-body: 17px;
-    --fs-small: 13px;
-    --fs-button: 23px;
-    --fs-nav: 23px;
-    --fs-tag: 23px;
-    --fs-subheader: 23px;
+    --fs-h1: 5.938rem;
+    --fs-h2: 4.5rem;
+    --fs-h3: 3.375rem;
+    --fs-h4: 2.5rem;
+    --fs-h5: 1.875rem;
+    --fs-h6: 1.438rem;
+    --fs-body: 1.063rem;
+    --fs-small: 0.813rem;
+    --fs-button: 1.438rem;
+    --fs-nav: 1.438rem;
+    --fs-tag: 1.438rem;
+
 
     /* Font weight */
-    --fw--bold: 700; /* headings */
-    --fw--semibold: 600; /* navLink, subheader */
-    --fw--medium: 500; /* body, btn, tags*/
-    --fw--regular: 400; /* smallText */
+    --fw-bold: 700; /* headings */
+    --fw-semibold: 600; /* navLink, subheader */
+    --fw-medium: 500; /* body, btn, tags*/
+    --fw-regular: 400; /* smallText */
 
     /* Line heights */
-    --lh-heading: 120px;
-    --lh-body: 120px;
+    --lh-heading: 1.2;
+    --lh-body: 1.2;
+
+    /* Spacing - subject to change */
+    --sp-xs: 0.25rem;
+    --sp-sm: 0.5rem;
+    --sp-md: 1rem; /* for spacing between header and text below */
+    --sp-lg: 1.5rem;
+    --sp-xl: 2rem; /* for spacing between navLinks, sections */
+    --sp-2xl: 2.5rem;
+    --sp-3xl: 7rem; /* for paragraph padding */
 }
