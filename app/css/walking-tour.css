@@ -1,0 +1,103 @@
+@import './variable.css';
+
+/* main - section 1: hero */
+section[aria-label="Walking tour hero"] {
+    position:relative;
+}
+
+section[aria-label="Walking tour hero"] img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--sp-xl);
+}
+section[aria-label="Walking tour hero"] div{
+    position: absolute;
+    top: 18%;
+    left: 8%;
+}
+section[aria-label="Walking tour hero"] h1{
+    font-size: var(--fs-h2);
+}
+
+section[aria-label="Walking tour hero"] .tagline{
+    font-size: var(--fs-tag);
+    font-weight: var(--fw-regular);
+    margin: var(--sp-sm) 0;
+}
+section[aria-label="Walking tour hero"] .tagline span{
+    display: inline-block;
+    padding: 0.75rem 3.5rem;
+    margin-left: var(--sp-xl);
+    background-color: var(--light-text-color);
+    color: var(--light-base-color);
+    font-size: var(--fs-tag);
+}
+
+section[aria-label="Walking tour hero"] p{
+    font-size: var(--fs-body);
+    margin-top: var(--sp-md);
+    width:60%;
+    margin-top: var(--sp-xl);
+}
+
+/* main - section 2: TOUR STOPS */
+section[aria-label="Tour stops"] h2{
+    font-size: var(--fs-h3);
+    margin-bottom: var(--sp-xl);
+}
+section[aria-label="Tour stops"] h2{
+    font-size: var(--fs-h3);
+    margin-bottom: var(--sp-xl);
+}
+
+section[aria-label="Tour stops"] ol{
+    list-style: none;
+}
+section[aria-label="Tour stops"] article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-xl);
+}
+.text-column h4{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--sp-xl);
+}
+.text-column h5{
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--sp-xl);
+}
+.text-column p{
+    padding-right: var(--sp-xl);
+    font-size: var(--fs-body);
+    margin-bottom: var(--sp-xl);
+}
+section[aria-label="Tour stops"] hr{
+    border-top: solid var(--light-text-color) 1.5px;
+    margin: var(--sp-sm) 0;
+}
+.side-quest summary{
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-bold);
+}
+.side-quest p{
+    font-size: var(--fs-body);
+    margin-top: var(--sp-sm);
+}
+.img-column{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.img-column .old-pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.img-column .new-pic{
+    clip-path: inset(0 0 0 50%);
+}
