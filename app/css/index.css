@@ -67,7 +67,7 @@ section[aria-label="About James Joyce"] {
 }
 section[aria-label="About James Joyce"] p {
     font-size: var(--fs-body);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     line-height: var(--lh-body);
 }
 

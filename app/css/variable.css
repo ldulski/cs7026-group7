@@ -8,6 +8,8 @@
     --dark-text-color: #F2B769;
     --dark-audio-bar:#0E1D34;
 
+    --footer-faded-color: #37465Ecc;
+
     /* for highlight & btn variations */
     --accent-cream: #fdfff5; 
     --accent-navy: #37465E;
@@ -34,8 +36,8 @@
     /* Font weight */
     --fw-bold: 700; /* headings */
     --fw-semibold: 600; /* navLink, subheader */
-    --fw-medium: 500; /* body, btn, tags*/
-    --fw-regular: 400; /* smallText */
+    --fw-medium: 500; /* */
+    --fw-regular: 400; /* body, btn, tags*/
 
     /* Line heights */
     --lh-heading: 1.2;
