@@ -18,18 +18,24 @@
     --font-primary: "Epilogue", sans-serif;
 
     /* Font sizes */
-    --ts-h1: 95px;
-    --ts-h2: 72px;
-    --ts-h3: 54px;
-    --ts-h4: 40px;
-    --ts-h5: 30px;
-    --ts-h6: 23px;
-    --ts-body: 17px;
-    --ts-small: 13px;
-    --ts-button: 23px;
-    --ts-nav: 23px;
-    --ts-tag: 23px;
-    --ts-subheader: 23px;
+    --fs-h1: 95px;
+    --fs-h2: 72px;
+    --fs-h3: 54px;
+    --fs-h4: 40px;
+    --fs-h5: 30px;
+    --fs-h6: 23px;
+    --fs-body: 17px;
+    --fs-small: 13px;
+    --fs-button: 23px;
+    --fs-nav: 23px;
+    --fs-tag: 23px;
+    --fs-subheader: 23px;
+
+    /* Font weight */
+    --fw--bold: 700; /* headings */
+    --fw--semibold: 600; /* navLink, subheader */
+    --fw--medium: 500; /* body, btn, tags*/
+    --fw--regular: 400; /* smallText */
 
     /* Line heights */
     --lh-heading: 120px;
