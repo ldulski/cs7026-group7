@@ -136,4 +136,5 @@ section[aria-label="Works by James Joyce"] article a{
     transform:translateX(-50%);
     bottom: 10%;
     width: 80%;
+    white-space: nowrap;
 }
