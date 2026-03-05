@@ -1,0 +1,113 @@
+/* main - section 1: Following the Dubliners locations */
+section[aria-label="Following the Dubliners locations"] h1{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--sp-xl);
+}
+.page-lead{
+    font-size: var(--fs-body);
+    margin-bottom: var(--sp-xl);
+    width: 60%;
+}
+/* main - section 1 - filter */
+nav[aria-label="Location category filter"] ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--sp-xl);
+    border-bottom: solid var(--light-text-color) 2px;
+    margin-bottom: var(--sp-xl);
+    overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+    background: linear-gradient(to left, #00000007 0%, transparent 15%);
+}
+nav[aria-label="Location category filter"] li{
+    padding: 0.5rem;
+}
+nav[aria-label="Location category filter"] button{
+    font-size: var(--fs-nav);
+    color: var(--light-text-color);
+    background:none;
+    border: none;
+    padding: 0 1rem;
+}
+nav[aria-label="Location category filter"] li:first-of-type button{
+    margin-left: 0.9rem;
+    border-right: solid var(--light-text-color) 2px;
+}
+
+/* main - section 1 - location card */
+.location-cards{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-xl);
+}
+.location-cards li{
+    width: 100%;
+    height: auto;
+    border: solid var(--faded-navy) 1.5px;
+}
+.location-cards img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+}
+.location-cards li div{
+    width: 100%;
+    height: 17rem;
+    padding: var(--sp-md) var(--sp-lg);
+    display:flex;
+    flex-direction: column;
+    gap: var(--sp-md);
+    position:relative;
+}
+.location-cards li div h2{
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-bold);
+}
+.location-cards li div p{
+    font-size: var(--fs-body);
+}
+.location-cards li div button{
+    position: absolute;
+    left: var(--sp-lg);
+    bottom: var(--sp-md);
+}
+.load-more{
+    display: block; /* overwrite original btn style */
+    margin: var(--sp-xl) auto;
+    padding: 0.75rem 5rem; 
+}
+
+/* main - section 2: FAQ */
+section[aria-label="Navigating Dublin FAQ"]{
+    padding: var(--sp-lg) 10rem;
+}
+section[aria-label="Navigating Dublin FAQ"] h2{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    margin-bottom: var(--sp-lg);
+}
+.section-lead{
+    font-size: var(--fs-h6);
+    text-align: center;
+    margin-bottom: var(--sp-xl);
+}  
+section[aria-label="Navigating Dublin FAQ"] summary{
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-bold);
+    margin-top: var(--sp-sm);
+}
+section[aria-label="Navigating Dublin FAQ"] p{
+    font-size: var(--fs-body);
+    margin-top: var(--sp-sm);
+}
+section[aria-label="Navigating Dublin FAQ"] hr{
+    border-top: solid var(--light-text-color) 1.5px;
+    margin-top: var(--sp-sm);
+}
