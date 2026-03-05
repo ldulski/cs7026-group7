@@ -65,12 +65,12 @@ section[aria-label="Tour stops"] article{
     gap: var(--sp-xl);
 }
 /* text column */
-.text-column h4{
+.text-column h3{
     font-size: var(--fs-h4);
     font-weight: var(--fw-bold);
     margin-bottom: var(--sp-xl);
 }
-.text-column h6{
+.text-column h4{
     font-size: var(--fs-h6);
     font-weight: var(--fw-bold);
 }
@@ -109,7 +109,7 @@ section[aria-label="Tour stops"] hr{
 }
 .spot-image{
     width: 100%;
-    height: 100%;
+    height:100%;
     object-fit: cover; 
     display: block;
 }

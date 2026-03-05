@@ -60,26 +60,30 @@ section[aria-label="All About Dubliners"] {
 section[aria-label="All About Dubliners"] h2{
     font-size: var(--fs-h2);
 }
-section[aria-label="All About Dubliners"] h6{
+section[aria-label="All About Dubliners"] hgroup > p{
     font-size: var(--fs-h6);
+    font-weight: var(--fw-bold);
     margin-bottom: var(--sp-xl);
 }
-section[aria-label="All About Dubliners"] p{
+section[aria-label="All About Dubliners"] div > p{
     font-size: var(--fs-body);
     margin-bottom: var(--sp-xl);
+}
+section[aria-label="All About Dubliners"] div:last-of-type{
+    justify-self:end;
 }
 section[aria-label="All About Dubliners"] img{
     display: block;
 }
 
 /* main - section 4: Works by James Joyce */
-section[aria-label="Works by James Joyce"] h6{
+section[aria-label="Works by James Joyce"] h2{
     font-size: var(--fs-h6);
     text-align: center;
     margin-bottom: var(--sp-lg);
     margin-top:var(--sp-3xl);
 }
-section[aria-label="Works by James Joyce"] h3{
+section[aria-label="Works by James Joyce"] hgroup p{
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
     text-align: center;
@@ -104,17 +108,17 @@ section[aria-label="Works by James Joyce"] article img {
 }
 section[aria-label="Works by James Joyce"] article div{
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     height: 100%;
-    padding: var(--sp-lg);
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     gap: var(--sp-xl);
 }
-section[aria-label="Works by James Joyce"] h5{
+section[aria-label="Works by James Joyce"] h3{
     font-size: var(--fs-h5);
     font-weight: var(--fw-bold);
     color: black;
@@ -125,7 +129,11 @@ section[aria-label="Works by James Joyce"] p{
     color: black;
     text-align:center;
 }
-section[aria-label="Works by James Joyce"] article a {
+section[aria-label="Works by James Joyce"] article a{
+    display:block;
     position:absolute;
-    bottom: 20%;
+    left:50%;
+    transform:translateX(-50%);
+    bottom: 10%;
+    width: 80%;
 }

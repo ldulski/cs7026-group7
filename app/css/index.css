@@ -70,7 +70,9 @@ section[aria-label="About James Joyce"] p {
     font-weight: var(--fw-regular);
     line-height: var(--lh-body);
 }
-
+section[aria-label="About James Joyce"] a{
+    margin: 1.5rem 0;
+}
 /* main - section: Joyce's Dublin photo gallery */
 section[aria-label="Joyce's Dublin photo gallery"] h2 {
     font-size: var(--fs-h3);
@@ -89,7 +91,7 @@ section[aria-label="Joyce's Dublin photo gallery"] figure img {
 section[aria-label="Joyce's Dublin photo gallery"] div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 16rem);
+    grid-template-rows: repeat(4, 20rem);
     gap: var(--sp-md);
 }
 section[aria-label="Joyce's Dublin photo gallery"] figure:nth-child(1) {
