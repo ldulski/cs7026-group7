@@ -52,6 +52,9 @@ header nav ul a{
     color: var(--light-text-color);
     text-align: right;
 }
+header nav ul a:hover{
+    color: var(--accent-red);
+}
 
 /* btn styles */
 .btn {
