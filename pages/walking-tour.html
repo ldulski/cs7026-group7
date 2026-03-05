@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../app/css/variable.css">
     <link rel="stylesheet" href="../app/css/global.css">
     <link rel="stylesheet" href="../app/css/walking-tour.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <script src="../app/js/script.js" defer></script>
   </head>
   <body>
 
@@ -48,10 +50,13 @@
                 <!-- STOP 1 - JAMES JOYCE CENTER -->
                 <li>
                     <article>
+                        <!-- location card - text -->
                         <div class="text-column">
                             <h4>1. James Joyce Center</h4>
-                            <p>The James Joyce Center is a restored Georgian townhouse near the childhood home of James Joyce. Full of exhibitions, readings, lectures, and promoting Joyce’s other works. It’s a great place to get your bearings and expand your knowledge on the Irish famed author.<br>Open from 10:30 AM to 4:30 PM Tuesday through Saturday. Tickets are €7 for adults, €5 for seniors and students (with a valid student ID) and free for children 12 and under.
-                            </p>
+                            <h6>Past</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
+                            <h6>Present</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
                             <h5>Audio Guide:</h5>
                             <audio controls src="#"><a href="#">Download audio</a></audio>
                             <hr>
@@ -60,8 +65,9 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </details>
                         </div>
+                        <!-- location card - image -->
                         <div class="img-column">
-                            <img src="assets/JJCenter_then-now.png" alt="James Joyce Center then and now">
+                            <img src="assets/JJCenter_then-now.png" alt="James Joyce Center then and now" class = "spot-image">
                         </div>
                     </article>
                 </li>
@@ -69,13 +75,24 @@
                 <!-- STOP 2 - TRINITY COLLEGE DUBLIN -->
                 <li>
                     <article>
+                        <!-- location card - image -->
                         <div class="img-column">
-                            <img src="assets/tcd_then.png" alt="Trinity College Dublin then" class = "old-pic">
-                            <img src="assets/tcd_now.png" alt="Trinity College Dublin now" class ="new-pic">
+                            <img src="assets/tcd_then.png" alt="Trinity College Dublin then" class = "spot-image image-past">
+                            <img src="assets/tcd_now.png" alt="Trinity College Dublin now" class ="spot-image image-present">
+                           <!-- slider -->
+                            <input type = "range" min = "0" max = "100" value = "50" class="slider" aria-label = "Percentage of present photo shown"/>
+                            <div class = "slider-line" aria-hidden="true"></div>
+                            <div class = "slider-btn" aria-hidden = "true">
+                                <i class="ph ph-arrows-out-line-horizontal"></i> 
+                            </div>  
                         </div>
+                        <!-- location card - text -->
                         <div class="text-column">
                             <h4>2. Trinity College Dublin</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h6>Past</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
+                            <h6>Present</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
                             <h5>Audio Guide:</h5>
                             <audio controls src="#"><a href="#">Download audio</a></audio>
                             <hr>
@@ -90,14 +107,19 @@
                 <!-- STOP 3 - Secret Bookshop -->
                 <li>
                     <article>
+                        <!-- location card - text -->
                         <div class="text-column">
                             <h4>3. The Secret Book and Record Store</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h6>Past</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
+                            <h6>Present</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
                             <h5>Audio Guide:</h5>
                             <audio controls src="#"><a href="#">Download audio</a></audio>
                         </div>
+                        <!-- location card - image -->
                         <div class="img-column">
-                            <img src="assets/Bookshop_then-now.png" alt="The Secret Book and Record Store then and now">
+                            <img src="assets/Bookshop_then-now.png" alt="The Secret Book and Record Store then and now" class="spot-image">
                         </div>
                     </article>
                 </li>
@@ -105,13 +127,24 @@
                 <!-- STOP 4 - City Markets -->
                 <li>
                     <article>
+                        <!-- location card - image -->
                         <div class="img-column">
-                            <img src="assets/CityMarket_then.png" alt="City Markets then">
-                            <img src="assets/CityMarket_now.png" alt="City Markets now">
+                            <img src="assets/CityMarket_then.png" alt="City Markets then" class = "image-past">
+                            <img src="assets/CityMarket_now.png" alt="City Markets now" class = "image-present">
+                            <!-- slider -->
+                            <input type = "range" min = "0" max = "100" value = "50" class="slider" aria-label = "Percentage of present photo shown"/>
+                            <div class = "slider-line" aria-hidden="true"></div>
+                            <div class = "slider-btn" aria-hidden = "true">
+                                <i class="ph ph-arrows-out-line-horizontal"></i> 
+                            </div>  
                         </div>
+                        <!-- location card - text -->
                         <div class="text-column">
                             <h4>4. City Markets</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h6>Past</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
+                            <h6>Present</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
                             <h5>Audio Guide:</h5>
                             <audio controls src="#"><a href="#">Download audio</a></audio>
                             <hr>
@@ -126,9 +159,13 @@
                 <!-- STOP 5 - ST. STEPHEN'S GREEN -->
                 <li>
                     <article>
+                        <!-- location card - text -->
                         <div class="text-column">
                         <h4>5. St. Stephen's Green</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h6>Past</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
+                            <h6>Present</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
                             <h5>Audio Guide:</h5>
                             <audio controls src="#"><a href="#">Download audio</a></audio>
                             <hr>
@@ -137,9 +174,16 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </details>
                         </div>
+                        <!-- location card - image -->
                         <div class="img-column">
-                            <img src="assets/StStephens_then.png" alt="St. Stephen's Green then">
-                            <img src="assets/StStephens_now.png" alt="St. Stephen's Green now">
+                            <img src="assets/StStephens_then.png" alt="St. Stephen's Green then" class = "image-past">
+                            <img src="assets/StStephens_now.png" alt="St. Stephen's Green now" class="image-present">
+                            <!-- slider -->
+                            <input type = "range" min = "0" max = "100" value = "50" class="slider" aria-label = "Percentage of present photo shown"/>
+                            <div class = "slider-line" aria-hidden="true"></div>
+                            <div class = "slider-btn" aria-hidden = "true">
+                                <i class="ph ph-arrows-out-line-horizontal"></i> 
+                            </div> 
                         </div>
                     </article>
                 </li>
@@ -147,13 +191,24 @@
                 <!-- STOP 6 - SHELBOURNE HOTEL -->
                 <li>
                     <article>
+                        <!-- location card - image -->
                         <div class="img-column">
-                            <img src="assets/ShelbourneHotel_then.png" alt="Shelbourne Hotel then">
-                            <img src="assets/ShelbourneHotel_now.png" alt="Shelbourne Hotel now">
+                            <img src="assets/ShelbourneHotel_then.png" alt="Shelbourne Hotel then" class = "image-past">
+                            <img src="assets/ShelbourneHotel_now.png" alt="Shelbourne Hotel now" class = "image-present">
+                            <!-- slider -->
+                            <input type = "range" min = "0" max = "100" value = "50" class="slider" aria-label = "Percentage of present photo shown"/>
+                            <div class = "slider-line" aria-hidden="true"></div>
+                            <div class = "slider-btn" aria-hidden = "true">
+                                <i class="ph ph-arrows-out-line-horizontal"></i> 
+                            </div> 
                         </div>
+                        <!-- location card - text -->
                         <div class="text-column">
                             <h4>6. Shelbourne Hotel</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h6>Past</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
+                            <h6>Present</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
                             <h5>Audio Guide:</h5>
                             <audio controls src="#"><a href="#">Download audio</a></audio>
                             <hr>
@@ -168,9 +223,13 @@
                 <!-- STOP 7 - KENNEDY'S BAR -->
                 <li>
                     <article>
+                        <!-- location card - text -->
                         <div class="text-column">
                             <h4>7. Kennedy's Bar</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h6>Past</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
+                            <h6>Present</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur. Dolor ullamcorper viverra eu feugiat ut. Proin ultrices cursus ornare maecenas lectus augue aliquam sed massa. Eget orci morbi ac felis tempor pharetra suspendisse ac. Id eget pulvinar tempus nibh. Non nulla morbi ornare nisl morbi feugiat sit molestie consequat.</p>
                             <h5>Audio Guide:</h5>
                             <audio controls src="#"><a href="#">Download audio</a></audio>
                             <hr>
@@ -179,14 +238,16 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </details>
                         </div>
+                        <!-- location card - image -->
                         <div class="img-column">
-                            <img src="assets/KennedyBar_then-now.png" alt="Kennedy's Bar then and now">
+                            <img src="assets/KennedyBar_then-now.png" alt="Kennedy's Bar then and now" class="spot-image">
                         </div>
                     </article>
                 </li>
 
             </ol>
         </section>
+
         <!-- SECTION 3 - INTERACTIVE MAP -->
         <section aria-label="Interactive map">
             <h2>Interactive Map</h2>
@@ -198,7 +259,7 @@
     <!-- FOOTER -->
     <footer>
         <div>
-            <a href="index.html" aria-label="Retellings - Home">
+            <a href="index.html" aria-label="Retellings – Home">
                 <img src="assets/logo.png" alt="Retellings logo">
             </a>
             <p>Lorem ipsum dolor sit amet consectetur. Integer at at non et eu est sit gravida suspendisse, vitae arcu. Quis et, placerat at. Vitae sit amet varius. Turpis purus gravida.</p>
