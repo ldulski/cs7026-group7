@@ -82,6 +82,13 @@ header nav ul a{
     background-color: var(--accent-red);
 }
 
+.btn-s3{
+    background-color: var(--accent-navy);
+    color: var(--light-base-color);
+}
+.btn-s3:hover {
+    background-color: var(--accent-red);
+}
 
 /* Footer */
 footer {

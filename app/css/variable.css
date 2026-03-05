@@ -9,6 +9,7 @@
     --dark-audio-bar:#0E1D34;
 
     --footer-faded-color: #37465Ecc;
+    --faded-navy: #5a687fcc; /* location card border */
 
     /* for highlight & btn variations */
     --accent-cream: #fdfff5; 
@@ -51,4 +52,7 @@
     --sp-xl: 2rem; /* for spacing between navLinks, sections, text-columns */
     --sp-2xl: 3rem; /* for spacing between header and text below */
     --sp-3xl: 7rem; /* for paragraph padding */
-}
+
+    /* Element Sizes */
+    --slider-size: 3rem;
+} 
