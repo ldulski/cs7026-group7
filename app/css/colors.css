@@ -1,22 +1,22 @@
-:root {
+/* :root {
     --light-base-color: #fdfff5;
     --light-text-color: #37465E;
     --light-button-color: #37465E;
     --light-button-hover: #e2fdff;
 
     --pure-black:#000000;
-}
+} */
 
 /* light mode + dark mode toggle */
 
 #theme-switch {
-    background-color: var(--light-base-color);
+    background-color: var(--accent-navy);
     max-width: 50px;
     max-height: 50px;
     margin: 0;
     padding: 5px;
     border-radius: 50%;
-    border: var(--light-text-color) solid 2px;
+    border: var(--accent-navy) solid 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +46,10 @@
 
 .darkmode #logo img:last-child {
     display: block;
+}
+
+.darkmode {
+    --dark-base-color: #37465E;
+    --dark-text-color: #F2B769;
+    --dark-audio-bar: #0E1D34;
 }
