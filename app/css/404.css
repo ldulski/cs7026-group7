@@ -1,4 +1,4 @@
-section[aria-label="Page not found"] h1{
+/* section[aria-label="Page not found"] h1{
     font-size: var(--fs-h2);
     font-weight:var(--fw-bold);
     text-align:center;
@@ -38,4 +38,4 @@ cite{
     margin-top: var(--sp-xl);
     padding: 0 7rem;
     text-align:right;
-}
+} */
