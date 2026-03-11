@@ -6,3 +6,44 @@
 
     --pure-black:#000000;
 }
+
+/* light mode + dark mode toggle */
+
+#theme-switch {
+    background-color: var(--light-base-color);
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0;
+    padding: 5px;
+    border-radius: 50%;
+    border: var(--light-text-color) solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* light dark toggle styles */
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+#logo img:last-child {
+    display: none;
+}
+
+.darkmode #logo img:first-child {
+    display: none;
+}
+
+.darkmode #logo img:last-child {
+    display: block;
+}
