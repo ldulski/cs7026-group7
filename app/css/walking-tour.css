@@ -41,17 +41,52 @@ section[aria-label="Walking tour hero"] p{
     margin-top: var(--sp-xl);
 }
 
-/* main - section 2: TOUR STOPS */
-section[aria-label="Tour stops"] h2{
-    font-size: var(--fs-h3);
-    margin-bottom: var(--sp-xl);
+/* main - section 2: Interactive map */
+section[aria-label="Interactive map"]{
+    margin: var(--sp-xl) 0;
 }
+section[aria-label="Interactive map"] img{
+    display:block;
+    width: 100%;
+}
+
+/* main - section 3: Navigating Dublin FAQ */
+section[aria-label="Navigating Dublin FAQ"]{
+    padding: var(--sp-lg) 10rem;
+}
+section[aria-label="Navigating Dublin FAQ"] h2{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    margin-bottom: var(--sp-lg);
+}
+.section-lead{
+    font-size: var(--fs-h6);
+    text-align: center;
+    margin-bottom: var(--sp-xl);
+}  
+section[aria-label="Navigating Dublin FAQ"] summary{
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-bold);
+    margin-top: var(--sp-sm);
+}
+section[aria-label="Navigating Dublin FAQ"] p{
+    font-size: var(--fs-body);
+    margin-top: var(--sp-sm);
+}
+section[aria-label="Navigating Dublin FAQ"] hr{
+    border-top: solid var(--light-text-color) 1.5px;
+    margin-top: var(--sp-sm);
+}
+
+/* main - section 4: TOUR STOPS */
 section[aria-label="Tour stops"] h2{
     font-size: var(--fs-h3);
+    margin-top: var(--sp-xl);
     margin-bottom: var(--sp-xl);
 }
 
-/* main - section 2: TOUR STOPS - card */
+/* main - section 4: TOUR STOPS - card */
 section[aria-label="Tour stops"] ol{
     list-style: none;
     display: flex;
@@ -65,12 +100,12 @@ section[aria-label="Tour stops"] article{
     gap: var(--sp-xl);
 }
 /* text column */
-.text-column h4{
+.text-column h3{
     font-size: var(--fs-h4);
     font-weight: var(--fw-bold);
     margin-bottom: var(--sp-xl);
 }
-.text-column h6{
+.text-column h4{
     font-size: var(--fs-h6);
     font-weight: var(--fw-bold);
 }
@@ -167,13 +202,4 @@ section[aria-label="Tour stops"] hr{
 .slider:focus-visible ~ .slider-btn{
     outline: 0.3rem solid black;
     outline-offset: 0.2rem;
-}
-
-/* main - section 3: Interactive map */
-section[aria-label="Interactive map"]{
-    margin: var(--sp-xl) 0;
-}
-section[aria-label="Interactive map"] img{
-    display:block;
-    width: 100%;
 }
