@@ -90,7 +90,7 @@ function addClass(element,name){
         }
     }
 }
-
+console.log("I work");
 //hide elements that
  function removeClass(element, name){
     var i, arr1, arr2;
@@ -103,6 +103,7 @@ function addClass(element,name){
     }
     element.className = arr1.join(" ");
  }
+console.log("I work too");
 
  // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("filterBtnContainer");
@@ -114,3 +115,5 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+console.log("me three!!!");
