@@ -35,16 +35,17 @@
             <h1>Following the Dubliners</h1>
             <p class="page-lead">Lorem ipsum dolor sit amet consectetur. Pharetra ac et et facilisi lectus ut augue tincidunt. Posuere turpis pretium posuere risus amet purus sodales id. Nisi nisl purus dui massa faucibus vitae sit. Sit ornare amet congue nunc id cursus vestibulum pellentesque orci. Pharetra sapien sollicitudin urna dictumst et quam tincidunt a nullam. Imperdiet enim.</p>
             <!-- FILTER / CATEGORY NAV -->
-            <nav aria-label="Location category filter">
-                <ul>
-                    <li><button>View All</button></li>
-                    <li><button>Restaurants &amp; Pubs</button></li>
-                    <li><button>Museums</button></li>
-                    <li><button>Streets</button></li>
-                    <li><button>Rivers &amp; Canals</button></li>
-                    <li><button>City Center</button></li>
+            <div id="filterBtnContainer" aria-label="Location category filter">
+                <ul class="btnContainter">
+                    <li><button class="btn active" onclick="filterSelction('all')">View All</button></li>
+                    <li><button class="btn" onclick="filterSelection('rest-pub')">Restaurants &amp; Pubs</button></li>
+                    <li><button class="btn" onclick="filterSelection('musuem')">Museums</button></li>
+                    <li><button class="btn" onclick="filterSelection('streets')">Streets</button></li>
+                    <li><button class="btn" onclick="filterSelection('river-canal')">Rivers &amp; Canals</button></li>
+                    <li><button class="btn" onclick="filterSelection('building')">Historic Buildings</button></li>
+                    <li><button class="btn" onclick="filterSelection('shopping')">Shopping</button></li>
                 </ul>
-            </nav>
+            </div>
 
             <!-- LOCATION CARDS -->
             <ul class="location-cards">
@@ -55,7 +56,7 @@
                         <img src="assets/GreatBritainSt.png" alt="Great Britain Street">
                         <div>
                             <h2>Great Britain Street</h2>
-                            <p>The Sisters | Tag 01, Tag 02</p>
+                            <p>The Sisters | <a class="filterDiv streets">Street</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
@@ -68,7 +69,7 @@
                         <img src="assets/CanalBridge.png" alt="Canal Bridge">
                         <div>
                             <h2>Canal Bridge</h2>
-                            <p>An Encounter | Tag 01, Tag 02</p>
+                            <p>An Encounter | <a class="filterDiv river-canal">Rivers &amp; Canals</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
@@ -81,7 +82,7 @@
                         <img src="assets/PigeonHouse.png" alt="Pigeon House">
                         <div>
                             <h2>Pigeon House</h2>
-                            <p>An Encounter | Tag 01, Tag 02</p>
+                            <p>An Encounter | <a class="filterDiv building">Historic Building</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
@@ -94,7 +95,7 @@
                         <img src="assets/NorthStrand.png" alt="North Strand Road">
                         <div>
                             <h2>North Strand Road</h2>
-                            <p>An Encounter | Tag 01, Tag 02</p>
+                            <p>An Encounter | <a class="filterDiv streets">Street</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
@@ -107,7 +108,7 @@
                         <img src="assets/WharfRoad.png" alt="Wharf Road">
                         <div>
                             <h2>Wharf Road</h2>
-                            <p>An Encounter | Tag 01, Tag 02</p>
+                            <p>An Encounter | <a class="filterDiv streets">Street</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
@@ -120,7 +121,7 @@
                         <img src="assets/RiverLiffey.png" alt="River Liffey">
                         <div>
                             <h2>River Liffey</h2>
-                            <p>An Encounter | Tag 01, Tag 02</p>
+                            <p>An Encounter | <a class="filterDiv river-canal">Rivers &amp; Canals</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>

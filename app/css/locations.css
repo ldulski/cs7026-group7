@@ -12,7 +12,7 @@ section[aria-label="Following the Dubliners locations"] h1{
     width: 60%;
 }
 /* main - section 1 - filter */
-nav[aria-label="Location category filter"] ul{
+div[aria-label="Location category filter"] ul{
     list-style: none;
     display: flex;
     align-items: center;
@@ -25,17 +25,17 @@ nav[aria-label="Location category filter"] ul{
     white-space: nowrap;
     background: linear-gradient(to left, #00000007 0%, transparent 15%);
 }
-nav[aria-label="Location category filter"] li{
+div[aria-label="Location category filter"] li{
     padding: 0.5rem;
 }
-nav[aria-label="Location category filter"] button{
+div[aria-label="Location category filter"] button{
     font-size: var(--fs-nav);
     color: var(--light-text-color);
     background:none;
     border: none;
     padding: 0 1rem;
 }
-nav[aria-label="Location category filter"] li:first-of-type button{
+div[aria-label="Location category filter"] li:first-of-type button{
     margin-left: 0.9rem;
     border-right: solid var(--light-text-color) 2px;
 }
@@ -46,6 +46,7 @@ nav[aria-label="Location category filter"] li:first-of-type button{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--sp-xl);
+    overflow: hidden;
 }
 .location-cards li{
     width: 100%;
@@ -83,6 +84,15 @@ nav[aria-label="Location category filter"] li:first-of-type button{
     display: block; /* overwrite original btn style */
     margin: var(--sp-xl) auto;
     padding: 0.75rem 5rem; 
+}
+
+/* filter by styles for location cards */
+.filterDiv{
+    display: none;
+}
+
+.show{
+    display: block;
 }
 
 /* main - section 2: FAQ */
