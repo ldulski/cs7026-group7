@@ -43,7 +43,6 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 //life of jj quotes swapping section
-
 // quote array begins here
 const quotes = [
     "Life is too short to read a bad book — James Joyce",
