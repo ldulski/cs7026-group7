@@ -66,11 +66,12 @@ window.setInterval(randomQuote, 5000);
 
 //location filter 
 
-filterSelection("all");
+nfilterSelectio("all");
 function filterSelection(c){
     var x, i;
      x = document.getElementsByClassName("filterDiv");
      if (c==="all") c = "";
+
      //adding the "show" class (display: block) to the filtered elements and removing the "show" class when the element isn't selected
      for (i = 0; i < x.length; i++){
         removeClass(x[i], "show");
