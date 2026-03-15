@@ -40,7 +40,7 @@ div[aria-label="Location category filter"] button:hover{
     color: var(--accent-cream);
     padding: 1.5rem, 1.75rem;
 }
-div[aria-label="Location category filter"] li:first-of-type button{
+div[aria-label="Location category filter"] article:first-of-type button{
     margin-left: 0.9rem;
     border-right: solid var(--light-text-color) 2px;
 }

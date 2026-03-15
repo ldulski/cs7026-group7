@@ -1,16 +1,15 @@
 console.log('hello I work!');
 //location filter 
-const filterButtons = document.querySelectorAll(".filter-buttons .btn button");
+const filterButtons = document.querySelectorAll(".filter-buttons button");
 const filterableCards = document.querySelectorAll(".filterable-cards .card");
-
-console.log(filterButtons, filterableCards);
+// console.log(filterButtons, filterableCards);
 
 
 //define filter cards function
 const filterCards = e => {
-    document.querySelector(".active").classList.remove;
-    e.target.classList.add(".active");
-    console.log(e.target);
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    // console.log(e.target);
 
 
     //iterate over each filterable card
@@ -23,4 +22,4 @@ const filterCards = e => {
 
 //click event listener for filter buttons
 
-filterButtons.forEach(button => button.addEventListener("click", filterCards))
+filterButtons.forEach(button => button.addEventListener("click", filterCards));
