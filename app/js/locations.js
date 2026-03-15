@@ -25,3 +25,24 @@ const filterCards = e => {
 
 //click event listener for filter buttons
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
+
+//load more button
+const loadBtn = document.querySelector(".loadmore");
+var cards = [document.querySelectorAll(".card")];
+var currentValue = 6;
+
+//on button click it will load 6 more cards
+loadBtn.addEventListener('click',()=>{
+    setTimeout(() => {
+        for(var i=currentValue;i<currentValue+6; i++){
+            cards[i].style.display = "block";
+        }
+        //display nothing if no more cards left
+        currentValue += 6;
+        if(currentValue >= cards.length){
+            loadBtn.style.display = "none";
+        }
+            loadBtn.innerText = 'Load More'; 
+    },1000);
+    loadBtn.innerText = ''; 
+})
