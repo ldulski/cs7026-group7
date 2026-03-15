@@ -44,5 +44,5 @@ loadBtn.addEventListener('click',()=>{
         }
             loadBtn.innerText = 'Load More'; 
     },1000);
-    loadBtn.innerText = ''; 
+    // loadBtn.innerText = ''; 
 })
