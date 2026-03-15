@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../app/css/variable.css">
     <link rel="stylesheet" href="../app/css/global.css">
     <link rel="stylesheet" href="../app/css/locations.css">
+    <script src="../app/js/script.js" defer></script>
   </head>
   <body>
 
@@ -35,99 +36,87 @@
             <h1>Following the Dubliners</h1>
             <p class="page-lead">Lorem ipsum dolor sit amet consectetur. Pharetra ac et et facilisi lectus ut augue tincidunt. Posuere turpis pretium posuere risus amet purus sodales id. Nisi nisl purus dui massa faucibus vitae sit. Sit ornare amet congue nunc id cursus vestibulum pellentesque orci. Pharetra sapien sollicitudin urna dictumst et quam tincidunt a nullam. Imperdiet enim.</p>
             <!-- FILTER / CATEGORY NAV -->
-            <div id="filterBtnContainer" aria-label="Location category filter">
-                <ul class="btnContainter">
-                    <li><button class="btn active" onclick="filterSelction('all')">View All</button></li>
-                    <li><button class="btn" onclick="filterSelection('rest-pub')">Restaurants &amp; Pubs</button></li>
-                    <li><button class="btn" onclick="filterSelection('musuem')">Museums</button></li>
-                    <li><button class="btn" onclick="filterSelection('streets')">Streets</button></li>
-                    <li><button class="btn" onclick="filterSelection('river-canal')">Rivers &amp; Canals</button></li>
-                    <li><button class="btn" onclick="filterSelection('building')">Historic Buildings</button></li>
-                    <li><button class="btn" onclick="filterSelection('shopping')">Shopping</button></li>
-                </ul>
+            <div aria-label="Location category filter">
+                <div class="filter-buttons">
+                    <button class="btn active" data-name="all">View All</button>
+                    <button class="btn" ata-name="food">Restaurants &amp; Pubs</button>
+                    <button class="btn" data-name="museum">Museums</button>
+                    <button class="btn" data-name="street">Streets</button>
+                    <button class="btn" data-name="waterway">Rivers &amp; Canals</button>
+                    <button class="btn" data-name="building">Historic Buildings</button>
+                   <button class="btn"data-name="shopping">Shopping</button>
+                </div>
             </div>
 
             <!-- LOCATION CARDS -->
-            <ul class="location-cards">
+            <div class="location-cards">
 
                 <!-- LOCATION 1 - GREAT BRITAIN STREET -->
-                <li>
-                    <article>
+                    <article  data-name="street" class="filterable-cards">
                         <img src="assets/GreatBritainSt.png" alt="Great Britain Street">
                         <div>
                             <h2>Great Britain Street</h2>
-                            <p>The Sisters | <a class="filterDiv streets">Street</a></p>
+                            <p>The Sisters | <a>Street</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
                     </article>
-                </li>
 
                 <!-- LOCATION 2 - CANAL BRIDGE -->
-                <li>
-                    <article>
+                    <article  data-name="waterway" class="filterable-cards card">
                         <img src="assets/CanalBridge.png" alt="Canal Bridge">
                         <div>
                             <h2>Canal Bridge</h2>
-                            <p>An Encounter | <a class="filterDiv river-canal">Rivers &amp; Canals</a></p>
+                            <p>An Encounter | <a>Rivers &amp; Canals</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
                     </article>
-                </li>
 
                 <!-- LOCATION 3 - PIGEON HOUSE -->
-                <li>
-                    <article>
+                    <article data-name="building" class="filterable-cards card">
                         <img src="assets/PigeonHouse.png" alt="Pigeon House">
                         <div>
                             <h2>Pigeon House</h2>
-                            <p>An Encounter | <a class="filterDiv building">Historic Building</a></p>
+                            <p>An Encounter | <a>Historic Building</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
                     </article>
-                </li>
 
                 <!-- LOCATION 4 - NORTH STRAND ROAD -->
-                <li>
-                    <article>
+                    <article data-name="street" class="filterable-cards card">
                         <img src="assets/NorthStrand.png" alt="North Strand Road">
                         <div>
                             <h2>North Strand Road</h2>
-                            <p>An Encounter | <a class="filterDiv streets">Street</a></p>
+                            <p>An Encounter | <a>Street</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
                     </article>
-                </li>
 
                 <!-- LOCATION 5 - WHARF ROAD -->
-                <li>
-                    <article>
+                    <article data-name="street" class="filterable-cards card">
                         <img src="assets/WharfRoad.png" alt="Wharf Road">
                         <div>
                             <h2>Wharf Road</h2>
-                            <p>An Encounter | <a class="filterDiv streets">Street</a></p>
+                            <p>An Encounter | <a>Street</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
                     </article>
-                </li>
 
                 <!-- LOCATION 6 - RIVER LIFFEY -->
-                <li>
-                    <article>
+                    <article data-name="waterway" class="filterable-cards card">
                         <img src="assets/RiverLiffey.png" alt="River Liffey">
                         <div>
                             <h2>River Liffey</h2>
-                            <p>An Encounter | <a class="filterDiv river-canal">Rivers &amp; Canals</a></p>
+                            <p>An Encounter | <a>Rivers &amp; Canals</a></p>
                             <p>Rating: 4.5/5</p>
                             <button class="btn btn-s3">Map It Out</button>
                         </div>
                     </article>
-                </li>
-            </ul>
+            </div>
             <button class="btn btn-s3 load-more">Load More</button>
         </section>
 

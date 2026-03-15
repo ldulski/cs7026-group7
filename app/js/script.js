@@ -65,56 +65,27 @@ window.setInterval(randomQuote, 5000);
 
 
 //location filter 
+const filterButtons = document.querySelectorAll(".filter-buttons .btn button");
+const filterableCards = document.querySelectorAll(".filterable-cards .card");
 
-nfilterSelectio("all");
-function filterSelection(c){
-    var x, i;
-     x = document.getElementsByClassName("filterDiv");
-     if (c==="all") c = "";
+console.log(filterButtons, filterableCards);
 
-     //adding the "show" class (display: block) to the filtered elements and removing the "show" class when the element isn't selected
-     for (i = 0; i < x.length; i++){
-        removeClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-     }
-}
 
-//show filtered elements
+//define filter cards function
+// const filterCards = e => {
+//     document.querySelector(".active").classList.remove;
+//     e.target.classList.add(".active");
+//     console.log(e.target);
 
-function addClass(element,name){
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i<arr2.length;i++){
-        if(arr1.indexOf(arr2[i]) == -1){
-            element.className += " " + arr2[i];
-        }
-    }
-}
-console.log("I work");
-//hide elements that
- function removeClass(element, name){
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for ( i = 0; i < arr2.length; i++){
-        while (arr1.indexOf(arr2[i]) > -1){
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-    }
-    element.className = arr1.join(" ");
- }
-console.log("I work too");
 
- // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("filterBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+    //iterate over each filterable card
+//     filterableCards.forEach(card => {
+//         //add hide class to hide the card intitially
+//         card.classList.add("hide");
 
-console.log("me three!!!");
+//     })
+// };
+
+//click event listener for filter buttons
+
+// filterButtons.forEach(button => button.addEventListener("click", filterCards))
