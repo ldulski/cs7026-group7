@@ -1,18 +1,20 @@
 @import './variable.css';
 
 /* main - section 1: Following the Dubliners locations */
-section[aria-label="Following the Dubliners locations"] h1{
+section[aria-label="Following the Dubliners locations"] h1 {
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
     margin-bottom: var(--sp-xl);
 }
-.page-lead{
+
+.page-lead {
     font-size: var(--fs-body);
     margin-bottom: var(--sp-xl);
     width: 60%;
 }
+
 /* main - section 1 - filter */
-div[aria-label="Location category filter"] .filterable-cards{
+div[aria-label="Location category filter"] .filterable-cards {
     list-style: none;
     display: flex;
     align-items: center;
@@ -25,103 +27,123 @@ div[aria-label="Location category filter"] .filterable-cards{
     white-space: nowrap;
     background: linear-gradient(to left, #00000007 0%, transparent 15%);
 }
-div[aria-label="Location category filter"] article{
+
+div[aria-label="Location category filter"] article {
     padding: 0.5rem;
 }
-div[aria-label="Location category filter"] button{
+
+div[aria-label="Location category filter"] button {
     font-size: var(--fs-nav);
     color: var(--light-text-color);
-    background:none;
+    background: none;
     border: none;
-    padding: 0 1rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1.75rem;
 }
-div[aria-label="Location category filter"] button:hover{
-    background-color: var(--accent-red);
-    color: var(--accent-cream);
-    padding: 2rem 2.5rem;
+
+div[aria-label="Location category filter"] button:hover {
+    text-decoration: solid 2px var(--accent-navy);
 }
-div[aria-label="Location category filter"] article:first-of-type button{
+
+div[aria-label="Location category filter"] button .active {
+    text-decoration: solid 2px var(--accent-navy);
+}
+
+div[aria-label="Location category filter"] article:first-of-type button {
     margin-left: 0.9rem;
     border-right: solid var(--light-text-color) 2px;
 }
 
 /* main - section 1 - location card */
-.filterable-cards{
+.filterable-cards {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--sp-xl);
     overflow: hidden;
 }
-.filterable-cards article{
+
+.filterable-cards article {
     width: 100%;
     height: auto;
     border: solid var(--faded-navy) 1.5px;
 }
-.filterable-cards img{
+
+.filterable-cards img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     display: block;
 }
-.filterable-cards article  div{
+
+.filterable-cards article div {
     width: 100%;
     height: 17rem;
     padding: var(--sp-md) var(--sp-lg);
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: var(--sp-md);
-    position:relative;
+    position: relative;
 }
-.filterable-cards article div h2{
+
+.filterable-cards article div h2 {
     font-size: var(--fs-h5);
     font-weight: var(--fw-bold);
 }
-.filterable-cards article div p{
+
+.filterable-cards article div p {
     font-size: var(--fs-body);
 }
-.filterable-cards article div button{
+
+.filterable-cards article div button {
     position: absolute;
     left: var(--sp-lg);
     bottom: var(--sp-md);
 }
-.load-more{
-    display: block; /* overwrite original btn style */
+
+.load-more {
+    display: block;
+    /* overwrite original btn style */
     margin: var(--sp-xl) auto;
-    padding: 0.75rem 5rem; 
+    padding: 0.75rem 5rem;
 }
 
 /* filter by styles for location cards */
 
-.card.hide{
+.card.hide {
     display: none;
 }
 
 /* main - section 2: FAQ */
-section[aria-label="Navigating Dublin FAQ"]{
+section[aria-label="Navigating Dublin FAQ"] {
     padding: var(--sp-lg) 10rem;
 }
-section[aria-label="Navigating Dublin FAQ"] h2{
+
+section[aria-label="Navigating Dublin FAQ"] h2 {
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
     text-align: center;
     margin-bottom: var(--sp-lg);
 }
-.section-lead{
+
+.section-lead {
     font-size: var(--fs-h6);
     text-align: center;
     margin-bottom: var(--sp-xl);
-}  
-section[aria-label="Navigating Dublin FAQ"] summary{
+}
+
+section[aria-label="Navigating Dublin FAQ"] summary {
     font-size: var(--fs-h6);
     font-weight: var(--fw-bold);
     margin-top: var(--sp-sm);
 }
-section[aria-label="Navigating Dublin FAQ"] p{
+
+section[aria-label="Navigating Dublin FAQ"] p {
     font-size: var(--fs-body);
     margin-top: var(--sp-sm);
 }
-section[aria-label="Navigating Dublin FAQ"] hr{
+
+section[aria-label="Navigating Dublin FAQ"] hr {
     border-top: solid var(--light-text-color) 1.5px;
     margin-top: var(--sp-sm);
 }
