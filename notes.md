@@ -1,5 +1,10 @@
-Group Notes for Dubliners Website (Last Updated: 23/02)
+Group Notes for Dubliners Website (Last Updated: 15/03)
 
 - Added base files for HTML, CSS, and JS
 - Added a seperate CSS file for colors to be switched with light/dark mode toggle
 - Added a gitignore file, preventing certain files from uploading when push changes
+
+- do we still want the star rating system? That will require some extra JS work to store rating info
+- add all other locations
+- add photos to the location and all the paragraph information
+- edit card styles to fit all the content we will have (please dont edit class names as those are now linked to JS files)
